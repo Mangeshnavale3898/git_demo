@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome-all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1 class="text-center mt-2">Index page <i class="fa fa-user"></i></h1>
+    <div class="container">
+        <div class="row">
+            <div class="card w-50 mx-auto mt-5 bg-light">
+                <div class="card-header">
+                     <h4 class="text-danger">Perform ur oprations</h4>   
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                            <a href="./emp/insert" class="list-group-item list-group-item-action list-group-item-primary">Insert <i class="fa fa-plus float-right text-dark"></i></a>
+                            <a href="./emp/display" class="list-group-item list-group-item-action list-group-item-primary">Display <i class="fa fa-newspaper float-right text-dark"></i></a>
+                            <a href="./emp/update" class="list-group-item list-group-item-action list-group-item-primary">Update <i class="fa fa-upload float-right text-dark"></i></a>
+                            <a href="./emp/delete" class="list-group-item list-group-item-action list-group-item-primary">Delete <i class="fa fa-trash float-right text-dark"></i></a>
+                    </div>        
+
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>    
+<script src="{% static 'js/popper.min.js' %}"></script>    
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/fontawesome-all.js' %}"></script>    
+</body>
+</html>
